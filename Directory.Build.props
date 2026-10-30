@@ -1,0 +1,8 @@
+<Project>
+
+  <!-- Xcode 27.2 is newer than the version the installed MAUI workload expects (27.1). -->
+  <PropertyGroup Condition="$(TargetFramework.Contains('-maccatalyst'))">
+    <ValidateXcodeVersion>false</ValidateXcodeVersion>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MemoPad.Api/MemoPad.Api.csproj" />
+    <Project Path="src/MemoPad.App.UI/MemoPad.App.UI.csproj" />
+    <Project Path="src/MemoPad.App/MemoPad.App.csproj" />
+    <Project Path="src/MemoPad.Shared/MemoPad.Shared.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MemoPad.Api.Tests/MemoPad.Api.Tests.csproj" />
+    <Project Path="tests/MemoPad.App.UI.Tests/MemoPad.App.UI.Tests.csproj" />
+  </Folder>
+</Solution>
