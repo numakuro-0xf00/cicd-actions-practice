@@ -1,0 +1,25 @@
+name: Hello Actions    # Actions タブに表示される名前
+
+on:
+  push:    # どのブランチへの push でも起動
+  workflow_dispatch:    # Actions タブの「Run workflow」ボタンで手動起動
+
+jobs:
+  hello: # ジョブID(任意の名前)
+   runs-on: ubuntu-latest  # ランナーの種類
+   steps:
+    - name: あいさつ
+      run: echo "Hello, GitHub Actions!"
+
+    - name: 実行コンテキストを表示
+      run: |
+        echo "イベント：　${{ github.event_name }}"
+        echo "ブランチ:  ${{ github.ref_name  }}"
+        echo "コミット：　　${{ github.sha  }}"
+        echo "実行者：  ${{ github.actor }}"
+    - name: ランナーの環境を見る
+      run: |
+         uname -a
+         pwd
+         ls -la
+         dotnet --list-sdks
